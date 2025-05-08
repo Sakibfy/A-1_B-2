@@ -2,10 +2,7 @@ function formatString(input: string, toUpper: boolean = true): string {
   return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
-
-console.log(formatString("Hello"));          
-console.log(formatString("Hello", true));   
-console.log(formatString("Hello", false));  
+ 
 
 
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
@@ -19,7 +16,7 @@ const books = [
   { title: "Book C", rating: 5.0 }
 ];
 
-console.log(filterByRating(books));
+
 
 
 
@@ -27,11 +24,7 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
   return arrays.flat();
 }
 
-
-console.log(concatenateArrays(["a", "b"], ["c"]));        
-console.log(concatenateArrays([1, 2], [3, 4], [5]));       
-
-
+    
 
 class Vehicle {
   private make: string;
@@ -62,8 +55,7 @@ class Car extends Vehicle {
 
 
 const myCar = new Car("Toyota", 2020, "Corolla");
-console.log(myCar.getInfo());   
-console.log(myCar.getModel()); 
+
 
 
 function processValue(value: string | number): number {
@@ -74,8 +66,7 @@ function processValue(value: string | number): number {
   }
 }
 
-console.log(processValue("hello")); 
-console.log(processValue(10));      
+     
 
 
 interface Product {
@@ -98,7 +89,6 @@ const products = [
   { name: "Bag", price: 50 }
 ];
 
-console.log(getMostExpensiveProduct(products));
 
 
 
@@ -119,9 +109,7 @@ function getDayType(day: Day): string {
     return "Weekday";
   }
 }
-
-console.log(getDayType(Day.Monday));  
-console.log(getDayType(Day.Sunday));  
+ 
 
 
 async function squareAsync(n: number): Promise<number> {
